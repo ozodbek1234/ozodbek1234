@@ -15,10 +15,24 @@ int main(){
     */
    
    //2-USUL
-   int val=10;
+  /* int val=10;
    int *ptr=&val;
+   val+=5;
+   val=*ptr+5;
+   *ptr=*ptr+5;
    cout << val << endl;
    cout << ptr << endl;
-   cout << *ptr << endl;
+   cout << *ptr << endl;*/
+   int *ptr;
+   int arr[]={10, 20, 30, 40, 50, 60};
+   
+   ptr=arr;
+    for (int i = 0; i < 6; i++)
+    {
+        cout << *ptr << " ";
+        ptr++;
+    }
+    
+   
     return 0;
 }
